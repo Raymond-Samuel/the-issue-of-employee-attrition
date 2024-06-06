@@ -1,0 +1,53 @@
+URL dataset yang dijadikan acuan.
+https://www.kaggle.com/datasets/rishikeshkonapure/hr-analytics-prediction/
+
+Syntax DDL untuk pembuatan database dan table.
+
+CREATE DATABASE project_m3;
+
+CREATE TABLE "table_m3" (
+    "Age" INT,
+    "Attrition" VARCHAR(255),
+    "BusinessTravel" VARCHAR(255),
+    "DailyRate" INT,
+    "Department" VARCHAR(255),
+    "DistanceFromHome" INT,
+    "Education" INT,
+    "EducationField" VARCHAR(255),
+    "EmployeeCount" INT,
+    "EmployeeNumber" INT,
+    "EnvironmentSatisfaction" INT,
+    "Gender" VARCHAR(255),
+    "HourlyRate" INT,
+    "JobInvolvement" INT,
+    "JobLevel" INT,
+    "JobRole" VARCHAR(255),
+    "JobSatisfaction" INT,
+    "MaritalStatus" VARCHAR(255),
+    "MonthlyIncome" INT,
+    "MonthlyRate" INT,
+    "NumCompaniesWorked" INT,
+    "Over18" VARCHAR(255),
+    "OverTime" VARCHAR(255),
+    "PercentSalaryHike" INT,
+    "PerformanceRating" INT,
+    "RelationshipSatisfaction" INT,
+    "StandardHours" INT,
+    "StockOptionLevel" INT,
+    "TotalWorkingYears" INT,
+    "TrainingTimesLastYear" INT,
+    "WorkLifeBalance" INT,
+    "YearsAtCompany" INT,
+    "YearsInCurrentRole" INT,
+    "YearsSinceLastPromotion" INT,
+    "YearsWithCurrManager" INT
+);
+
+
+Syntax DML untuk melakukan insert data ke database. Anda bisa menggunakan perintah COPY untuk melakukan insert data. Alternatif menggunakan task dalam dag karena lokasi file berada dilokal.
+
+COPY "table_m3"("Age", "Attrition", "BusinessTravel", "DailyRate", "Department", "DistanceFromHome", "Education", "EducationField", "EmployeeCount", "EmployeeNumber", "EnvironmentSatisfaction", "Gender", "HourlyRate", "JobInvolvement", "JobLevel", "JobRole", "JobSatisfaction", "MaritalStatus", "MonthlyIncome", "MonthlyRate", "NumCompaniesWorked", "Over18", "OverTime", "PercentSalaryHike", "PerformanceRating", "RelationshipSatisfaction", "StandardHours", "StockOptionLevel", "TotalWorkingYears", "TrainingTimesLastYear", "WorkLifeBalance", "YearsAtCompany", "YearsInCurrentRole", "YearsSinceLastPromotion", "YearsWithCurrManager")
+FROM 'O:P2M3_raymond-samuel_data_raw.csv' 
+DELIMITER ',' 
+CSV HEADER;
+

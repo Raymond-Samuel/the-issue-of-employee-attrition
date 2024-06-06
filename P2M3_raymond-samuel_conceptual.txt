@@ -1,0 +1,26 @@
+Jawab pertanyaan berikut dengan menggunakan kalimat Anda sendiri:
+
+1. Jelaskan apa yang dimaksud dengan NoSQL menggunakan pemahaman yang kalian ketahui !
+
+NoSQL adalah pendekatan desain database yang berfokus pada penyediaan mekanisme untuk penyimpanan dan pengambilan data yang dimodelkan dengan cara selain relasi tabular yang digunakan dalam database relasional. NoSQL, yang awalnya merujuk pada non-SQL atau non-relational, mendukung struktur data yang berbeda dari database relasional, membuat beberapa operasi lebih cepat di NoSQL.
+
+2. Jelaskan kapan harus menggunakan NoSQL dan Relational Database Management System !
+
+NoSQL dan Relational Database Management System (RDBMS) digunakan dalam situasi yang berbeda. Secara umum, RDBMS lebih cocok untuk aplikasi yang memerlukan kueri kompleks dan konsistensi data, sementara NoSQL lebih cocok untuk aplikasi yang memerlukan skalabilitas, fleksibilitas, dan ketersediaan tinggi.
+
+3. Sebutkan contoh 2 tools/platform NoSQL selain ElasticSearch beserta keunggulan tools/platform tersebut !
+
+- Algolia: Platform pencarian yang berfokus pada kecepatan dan relevansi hasil pencarian.
+- Manticore Search: Dalam beberapa tes, Manticore Search telah terbukti hingga 15X lebih cepat daripada Elasticsearch pada data kecil, 4X lebih cepat dalam data besar, dan 29X lebih cepat untuk analitik log.
+
+4. Jelaskan apa yang Anda ketahui dari Airflow menggunakan pemahaman dan bahasa Anda sendiri !
+
+Apache Airflow adalah platform sumber terbuka yang dirancang untuk merancang, menjadwalkan, dan memantau alur kerja yang berorientasi pada batch. Airflow dapat membuat alur kerja yang dapat berinteraksi dengan berbagai teknologi.
+
+5. Jelaskan apa yang Anda ketahui dari Great Expectations menggunakan pemahaman dan bahasa Anda sendiri !
+
+Great Expectations adalah alat dalam Python yang membantu para profesional data dalam membangun jalur data yang handal dengan fitur validasi yang sudah terintegrasi di setiap tahapannya. Dengan menetapkan ekspektasi atau standar tertentu untuk data, Great Expectations memastikan bahwa data sesuai dengan standar tersebut, sehingga data menjadi lebih handal dan mudah untuk dikelola.
+
+6. Jelaskan apa yang Anda ketahui dari Batch Processing menggunakan pemahaman dan bahasa Anda sendiri (Definisi, Contoh Kasus Penggunaan, Tools, dll) !
+
+Batch Processing adalah cara yang digunakan oleh komputer untuk menangani pekerjaan data besar dan berulang secara periodik. Keuntungan dari Batch Processing adalah efisiensi, karena minimnya interaksi manusia dan peningkatan efisiensi dalam mengeksekusi tugas yang berulang. Sebagai contoh, tagihan bulanan untuk layanan seperti utilitas biasanya dihasilkan melalui proses batch ini.
